@@ -10,6 +10,7 @@ h1 {
     color: #363535;
     font-size: 500%;
     font-family: 'Eczar', serif;
+    margin-bottom: 3px;
 
 
 }
@@ -19,6 +20,7 @@ h1 {
     color: #5c5a5a;
     font-size: 200%;
     font-style: italic;
+    margin-top: 3px;
 }
 
 p {
@@ -46,4 +48,11 @@ button:hover{
     color: #363535;
     border: 2px solid #363535;
 
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
