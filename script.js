@@ -12,8 +12,13 @@ let isAlive = false
 let score = 1
 
 function startGame(){
+    renderGame()
+}
+
+function renderGame(){
     total.textContent = "Sum: " + sum
     wins.textContent = "Wins: " + score
+    cards.textContent = "Cards: " + firstCard + " - " + secondCard
     if (sum <= 20){
         message.textContent = "Do you want to draw another card?"
     } else if (sum === 21) {
@@ -26,4 +31,10 @@ function startGame(){
     }  
 }
 
+function newCard(){
+    message.textContent = "This literally doesn't work yet lol"
+    let thirdCard = 4
+    sum += thirdCard
+    renderGame()
+}
 
