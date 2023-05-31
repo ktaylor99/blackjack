@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Gentium+Plus&display=swap');
+
+body {
+    background: radial-gradient(#f2f2f2, #999999);
+    background-attachment: fixed;
+    text-align: center;
+}
+
+h1 {
+    color: #363535;
+    font-size: 500%;
+    font-family: 'Eczar', serif;
+
+
+}
+
+#message {
+    font-family: 'Gentium Plus', serif;
+    color: #5c5a5a;
+    font-size: 200%;
+    font-style: italic;
+}
+
+p {
+    font-family: 'Gentium Plus', serif;
+    color: #363535;
+    font-size: 150%;
+}
+
+button {
+    background:#363535;
+    color:#f2f2f2;
+    font-family:'Eczar', serif;
+    border: 2px solid #363535;
+    font-size: 150%;
+    padding: 5px 5px;
+    width: 200px;
+    transition-duration: 0.4s;
+    border-radius: 2px;
+
+
+}
+
+button:hover{
+    background:#f2f2f2;
+    color: #363535;
+    border: 2px solid #363535;
+
+}
