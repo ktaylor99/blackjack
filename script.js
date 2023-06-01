@@ -10,6 +10,12 @@ let allCards = [ ]
 let hasBlackJack = false 
 let isAlive = false 
 
+let playerName = "Your Mom"
+let playerChips = 145
+
+let player = document.querySelector("#player")
+player.textContent = playerName + ": $" + playerChips
+
 function getRandomCard(){
     let cardRandom = Math.floor(Math.random() * 13) + 1
     if (cardRandom > 10){
