@@ -6,6 +6,8 @@ let cards = document.querySelector("#cards")
 let total = document.querySelector("#sum")
 let wins = document.querySelector("#wins")
 
+let allCards = [firstCard, secondCard]
+
 let hasBlackJack = false 
 let isAlive = false 
 
@@ -18,7 +20,7 @@ function startGame(){
 function renderGame(){
     total.textContent = "Sum: " + sum
     wins.textContent = "Wins: " + score
-    cards.textContent = "Cards: " + firstCard + " - " + secondCard
+    cards.textContent = "Cards: " + allCards[0] + " - " + allCards[1]
     if (sum <= 20){
         message.textContent = "Do you want to draw another card?"
     } else if (sum === 21) {
