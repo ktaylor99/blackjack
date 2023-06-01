@@ -1,13 +1,11 @@
-let firstCard = getRandomCard()
-let secondCard = getRandomCard()
-let sum = firstCard + secondCard
+let sum = 0
 let message = document.querySelector("#message")
 let cards = document.querySelector("#cards")
 let total = document.querySelector("#sum")
 let wins = document.querySelector("#wins")
 
 
-let allCards = [firstCard, secondCard]
+let allCards = [ ]
 
 let hasBlackJack = false 
 let isAlive = false 
@@ -25,6 +23,11 @@ function getRandomCard(){
 } 
 
 function startGame(){
+    isAlive = true
+    let firstCard = getRandomCard()
+    let secondCard = getRandomCard()
+    sum = firstCard + secondCard
+    allCards = [firstCard, secondCard]
     renderGame()
 }
 
@@ -47,12 +50,11 @@ function renderGame(){
 }
 
 function newCard(){
-    message.textContent = "This literally doesn't work yet lol"
+    if (isAlive === true && hasBlackJack === false ){
     let thirdCard = getRandomCard()
     allCards.push(thirdCard)
     sum = sum + thirdCard
     renderGame()
+    }
 }
-
-
 
